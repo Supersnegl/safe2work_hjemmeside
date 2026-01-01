@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Konsulentfirma | Kontakt</title>
+  <meta name="description" content="Kontakt os via formularen." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">Konsulentfirma</a>
+      <nav>
+        <a href="/">Forside</a>
+        <a href="/om">Om os</a>
+        <a aria-current="page" class="btn" href="/kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-small">
+      <h1>Kontakt</h1>
+      <p>Udfyld formularen – så vender vi tilbage hurtigst muligt.</p>
+    </section>
+
+    <section class="card">
+      <!-- Netlify Forms: data-netlify="true" + name -->
+      <form name="kontakt" method="POST" data-netlify="true" action="/tak">
+        <!-- Netlify anti-spam (hidden field) -->
+        <input type="hidden" name="form-name" value="kontakt" />
+        <p class="hint">
+          Felter markeret med * er påkrævede.
+        </p>
+
+        <div class="field">
+          <label for="navn">Navn *</label>
+          <input id="navn" name="navn" type="text" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="field">
+          <label for="emne">Emne</label>
+          <input id="emne" name="emne" type="text" />
+        </div>
+
+        <div class="field">
+          <label for="besked">Besked *</label>
+          <textarea id="besked" name="besked" rows="6" required></textarea>
+        </div>
+
+        <!-- Enkel "honeypot" kan også tilføjes, men Netlify har spamfiltre -->
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Alternativt</h2>
+      <p>
+        Email: <a href="mailto:kontakt@ditdomæne.dk">kontakt@ditdomæne.dk</a><br />
+        Telefon: <a href="tel:+45XXXXXXXX">+45 XX XX XX XX</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <div>
+        <strong>Konsulentfirma</strong><br />
+        CVR: [xxxxxx] · [Adresse] · [By]
+      </div>
+      <div>
+        <a href="mailto:kontakt@ditdomæne.dk">kontakt@ditdomæne.dk</a><br />
+        <a href="tel:+45XXXXXXXX">+45 XX XX XX XX</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
