@@ -26,10 +26,15 @@
   }
   .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 16px; }
   .logo { color: var(--text); text-decoration: none; font-weight: 700; letter-spacing: .2px; }
+  .logo img {
+      height: 48px;
+      width: auto;
+      display: block;
+  }
   nav { display: flex; gap: 10px; align-items: center; }
   nav a { color: var(--muted); text-decoration: none; padding: 8px 10px; border-radius: 10px; }
   nav a[aria-current="page"] { color: var(--text); background: rgba(255,255,255,.06); }
-  
+
   .hero { padding: 56px 0 26px; }
   .hero h1 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 10px; }
   .hero p { margin: 0; color: var(--muted); max-width: 70ch; }
