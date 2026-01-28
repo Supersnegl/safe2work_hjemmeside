@@ -6,6 +6,7 @@
   <title>Konsulentfirma | Kontakt</title>
   <meta name="description" content="Kontakt os via formularen." />
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 <body>
   <header class="site-header">
@@ -13,11 +14,19 @@
         <a class="logo" href="/">
             <img src="/assets/logo.svg" alt="Safe2Work">
         </a>
-      <nav>
-        <a class ="btn"  href="/">Forside</a>
-        <a class ="btn" href="/om">Om os</a>
-        <a aria-current="page" href="/kontakt">Kontakt</a>
-      </nav>
+      <div class="header-right">
+        <nav>
+          <a class ="btn"  href="/">Forside</a>
+          <a class ="btn" href="/om.html">Om os</a>
+          <a aria-current="page" href="/kontakt.html">Kontakt</a>
+        </nav>
+      
+        <div class="lang-switch" aria-label="Sprogvalg">
+          <a class="lang-pill is-active" href="/kontakt.html">DA</a>
+          <a class="lang-pill" href="/kontakt-en.html">EN</a>
+          <!-- Hvis vi vil have en tysk sektion -> senere: <a class="lang-pill" href="/index-de.html">DE</a> -->
+        </div>
+      </div>
     </div>
   </header>
 
@@ -75,6 +84,36 @@
     </section>
 
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>Safe 2 Work ApS</strong><br>
+        Diplomvej 381,<br>
+        2800 Kongens Lyngby <br>
+        CVR: 41035633<br>
+      </div>
+
+      <div class="footer-mid">
+        Ring til os på : 23 81 16 00 <br>
+        Eller udfyld formularen
+      </div>
+
+      <div class="footer-right">
+        <a class="footer-brand" href="/index.html">
+          <img class="footer-logo" src="/assets/logo.svg" alt="Safe2Work">
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> Safe2Work. Alle rettigheder forbeholdes.</small>
+    </div>
+  </footer>
+
+  <script> /*Javascript delen her sørger for at det er det rigtige år der står i footeren*/
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
