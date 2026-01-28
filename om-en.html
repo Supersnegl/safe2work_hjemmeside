@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Consulting firm | About us</title>
+  <meta name="description" content="Read about our experiences, values and procedures." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+        <a class="logo" href="/index-en.html">
+            <img src="/assets/logo.svg" alt="Safe2Work">
+        </a>
+      <div class="header-right">
+        <nav>
+          <a class = "btn" href="/index-en.html">Main page</a>
+          <a aria-current="page" href="/om-en.html">About us</a>
+          <a class="btn" href="/kontakt-en.html">Contact</a>
+        </nav>
+      
+        <div class="lang-switch" aria-label="Sprogvalg">
+          <a class="lang-pill" href="/om.html">DA</a>
+          <a class="lang-pill is-active" href="/om-en.html">EN</a>
+          <!-- Hvis vi vil have en tysk sektion -> senere: <a class="lang-pill" href="/index-de.html">DE</a> -->
+        </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about">
+      <h1>About us</h1>
+      <p>
+        Safe 2 Work ApS was founded in 2019 by Peter Misander. Since the beginning,
+        the company has worked to integrate safety as a natural part of the design
+        and development process, as well as making risk assessments easier to
+        understand and more accessible.
+      </p>
+      <p>
+        Safe 2 Work today consists of three safety engineers with competencies in
+        chemistry, construction/fire safety and mechanical engineering, as well as
+        a student assistant. We have offices at DTU Science Park and are closely
+        connected to the DTU environment, enabling us to continuously stay updated
+        on the latest knowledge within safety. We strive to solve tasks efficiently
+        and work continuously to develop and improve our digital tools, so we can
+        deliver the best possible service to our customers.
+      </p>
+    </section>
+  
+    <div class="row">
+      <div class="column">
+        <section class="about">
+          <h4>Safe 2 Work works with:</h4>
+          <ul class="liste">
+            <li>
+              Helping customers reduce accident risks to an acceptable level for
+              employees, visitors and neighbors of a facility.
+            </li>
+            <li>
+              Helping customers achieve compliance with regulations and
+              requirements within safety, working environment, fire protection,
+              emergency preparedness, etc.
+            </li>
+            <li>
+              Helping customers gain an overview of – and develop strategies for –
+              safety issues, preferably as early in the project as possible.
+            </li>
+          </ul>
+        </section>
+      </div>
+    
+      <div class="column">
+        <article class="card">
+          <div class="profilbillede">
+            <img src="assets/Peter.png" alt="Peter Kongsted Misander">
+          </div>
+          <p>
+            <i>Peter Misander – Lead Safety Engineer</i>
+          </p>
+        </article>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>Safe 2 Work ApS</strong><br>
+        Diplomvej 381,<br>
+        2800 Kongens Lyngby <br>
+        CVR: 41035633<br>
+      </div>
+  
+      <div class="footer-mid">
+        Call us at: 23 81 16 00 <br>
+        Or contact us via our contact form:
+  
+        <div class="footer-links">
+          <a href="/kontakt-en.html">Contact</a>
+        </div>
+      </div>
+  
+      <div class="footer-right">
+        <a class="footer-brand" href="/index-en.html">
+          <img class="footer-logo" src="/assets/logo.svg" alt="Safe2Work">
+        </a>
+      </div>
+    </div>
+  
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> Safe2Work. All rights reserved.</small>
+    </div>
+  </footer>
+  
+  <script> /*This JavaScript ensures the correct year is shown in the footer*/
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  
+  </body>
+  </html>
+  

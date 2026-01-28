@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Consulting firm | Contact</title>
+  <meta name="description" content="Contact us via the form." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+        <a class="logo" href="/index-en.html">
+            <img src="/assets/logo.svg" alt="Safe2Work">
+        </a>
+      <div class="header-right">
+        <nav>
+          <a class ="btn"  href="/index-en.html">Main page</a>
+          <a class ="btn" href="/om-en.html">About us</a>
+          <a aria-current="page" href="/kontakt-en.html">Contact</a>
+        </nav>
+      
+        <div class="lang-switch" aria-label="Sprogvalg">
+            <a class="lang-pill" href="/kontakt.html">DA</a>
+            <a class="lang-pill is-active" href="/kontakt-en.html">EN</a>
+            <!-- Hvis vi vil have en tysk sektion -> senere: <a class="lang-pill" href="/index-de.html">DE</a> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-small">
+      <h1>Contact</h1>
+      <p>Fill out the form – and we’ll get back to you as soon as possible.</p>
+    </section>
+  
+    <section class="card">
+      <form
+        name="kontakt"
+        method="POST"
+        action="/tak.html"
+        data-netlify="true"
+        netlify-honeypot="company"
+      >
+        <!-- Netlify requires this -->
+        <input type="hidden" name="form-name" value="kontakt" />
+  
+        <!-- Honeypot field (bots will fill this, humans won't) -->
+        <p hidden>
+          <label>
+            Company:
+            <input name="company" />
+          </label>
+        </p>
+  
+        <p class="hint">
+          Fields marked with * are required.
+        </p>
+  
+        <div class="field">
+          <label for="navn">Name *</label>
+          <input id="navn" name="navn" type="text" required />
+        </div>
+  
+        <div class="field">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+  
+        <div class="field">
+          <label for="emne">Subject</label>
+          <input id="emne" name="emne" type="text" />
+        </div>
+  
+        <div class="field">
+          <label for="besked">Message *</label>
+          <textarea id="besked" name="besked" rows="6" required></textarea>
+        </div>
+  
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>Safe 2 Work ApS</strong><br>
+        Diplomvej 381,<br>
+        2800 Kongens Lyngby <br>
+        CVR: 41035633<br>
+      </div>
+  
+      <div class="footer-mid">
+        Call us at: 23 81 16 00 <br>
+        Or fill out the form
+      </div>
+  
+      <div class="footer-right">
+        <a class="footer-brand" href="/index-en.html">
+          <img class="footer-logo" src="/assets/logo.svg" alt="Safe2Work">
+        </a>
+      </div>
+    </div>
+  
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> Safe2Work. All rights reserved.</small>
+    </div>
+  </footer>
+  
+  <script> /*This JavaScript ensures the correct year is shown in the footer*/
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  
+  </body>
+  </html>
+  
