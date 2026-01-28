@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.33 214.28">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        font-family: Helvetica-Bold, Helvetica;
+        font-size: 37px;
+        font-weight: 700;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-3, .cls-7 {
+        fill: #00239a;
+      }
+
+      .cls-2 {
+        letter-spacing: .16em;
+      }
+
+      .cls-5 {
+        stroke-width: 1.6px;
+      }
+
+      .cls-5, .cls-8 {
+        stroke: #ff6a3d;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6 {
+        letter-spacing: .16em;
+      }
+
+      .cls-6, .cls-3, .cls-7 {
+        stroke: #00239a;
+      }
+
+      .cls-9 {
+        letter-spacing: .16em;
+      }
+
+      .cls-9, .cls-10 {
+        fill: #fff;
+        stroke: #fff;
+      }
+
+      .cls-8 {
+        fill: none;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        letter-spacing: .04em;
+      }
+    </style>
+  </defs>
+  <path class="cls-8" d="m194.16,197.85s-75.81-.22-90.71,0c0-48.32,17.15-13.89,76.13-15.43,1.84-59.48-31.13-75.28,14.58-75.28.16,22.96,0,90.71,0,90.71Z"/>
+  <path class="cls-8" d="m171.46,111.83l-13.54,12.89v37.32h-37.64s-6.38,6.22-11.6,11.52"/>
+  <rect class="cls-5" x="31.26" y="36.1" width="90.71" height="90.71"/>
+  <path class="cls-5" d="m121.97,71.32h35.95v90.71h-90.71v-35.22h54.75v-55.49Z"/>
+  <path class="cls-4" d="m179.11,182c-21.43.36-38.45-4.43-49.94-7.67-6.51-1.83-13.17-3.37-17.21-3.29,3.12-3.1,7.17-6.97,8.23-8.01h38.77s-.03-38.2-.03-38.2l10.03-9.35c-.09,3.86,1.12,9.82,2.82,16.05,3.11,11.47,7.83,28.5,7.34,50.46Z"/>
+  <text class="cls-2" transform="translate(34.04 68.45)"><tspan class="cls-10" x="0" y="0">SAF</tspan><tspan class="cls-7" x="91.76" y="0">E</tspan></text>
+  <text class="cls-3" transform="translate(162.61 67.74)"><tspan x="0" y="0">2</tspan></text>
+  <text class="cls-1" transform="translate(50.41 104.53)"><tspan class="cls-9" x="0" y="0">WOR</tspan><tspan class="cls-6" x="108.18" y="0">K</tspan></text>
+</svg>
