@@ -6,6 +6,7 @@
   <title>Konsulentfirma | Om os</title>
   <meta name="description" content="Læs om vores erfaring, tilgang og værdier." />
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 <body>
   <header class="site-header">
@@ -13,35 +14,103 @@
         <a class="logo" href="/">
             <img src="/assets/logo.svg" alt="Safe2Work">
         </a>
-      <nav>
-        <a class = "btn" href="/">Forside</a>
-        <a aria-current="page" href="/om">Om os</a>
-        <a class="btn" href="/kontakt">Kontakt</a>
-      </nav>
+      <div class="header-right">
+        <nav>
+          <a class = "btn" href="/">Forside</a>
+          <a aria-current="page" href="/om.html">Om os</a>
+          <a class="btn" href="/kontakt.html">Kontakt</a>
+        </nav>
+      
+        <div class="lang-switch" aria-label="Sprogvalg">
+          <a class="lang-pill is-active" href="/om.html">DA</a>
+          <a class="lang-pill" href="/om-en.html">EN</a>
+          <!-- Hvis vi vil have en tysk sektion -> senere: <a class="lang-pill" href="/index-de.html">DE</a> -->
+        </div>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero hero-small">
+    <section class="about">
       <h1>Om os</h1>
-      <p>En kort introduktion til hvem I er, og hvad I står for.</p>
+        <p>Safe 2 Work ApS blev grundlagt i 2019 af Peter Misander. Siden begyndelsen har virksomhedens arbejdet med 
+          at integrere sikkerhed som en naturlig del af design- og udviklingsprocessen, samt gøre risikovurderinger mere letforståelige
+          og tilgængelige
+          </p>
+          <p>
+          Safe 2 Work består i dag af tre safety-ingeniører med kompetencer inden for kemi, 
+          byggeri/brand og maskinteknik samt en studentermedhjælper. Vi har kontor i 
+          DTU Science Park og er tæt knyttet til DTU-miljøet, så vi løbende kan holde
+          os opdateret på den nyeste viden inden for safety. Vi tilstræber at løse opgaverne
+          effektivt og arbejder kontinuerligt med at udvikle og forbedre vores digitale værktøjer, så vi
+          kan levere den bedst mulige service til vores kunder.
+        </p>
     </section>
 
-    <section class="grid">
-      <article class="card">
-        <h2>Erfaring</h2>
-        <p>1–3 bullets/afsnit om relevant erfaring, brancher, resultater.</p>
-      </article>
-      <article class="card">
-        <h2>Tilgang</h2>
-        <p>Hvordan arbejder I? Proces, samarbejde, leverancer.</p>
-      </article>
-      <article class="card">
-        <h2>Værdier</h2>
-        <p>Hvad er vigtigt for jer? Kvalitet, transparens, tempo, osv.</p>
-      </article>
-    </section>
+    <div class="row">
+      <div class="column">
+        <section class="about">
+          <h4>Safe 2 Work arbejder med:</h4>
+          <ul class="liste">
+            <li>
+              At hjælpe kunder med reduktion af ulykkesrisiko til et acceptabelt niveau både for medarbejdere, besøgende og naboer til et anlæg.
+            </li>
+            <li>
+              At hjælpe kunder til ”compliance” med regler og vilkår inden for sikkerhed, arbejdsmiljø, brandbeskyttelse, beredskab mv.
+            </li>
+            <li>
+              At hjælpe kunder til overblik over - og strategi for "safety issues" gerne så tidligt i projektet som muligt.
+            </li>
+          </ul>
+        </section>
+      </div>
+    
+      <div class="column">
+        <article class ="card">
+          <div class="profilbillede">
+            <img src = "assets/Peter.png" alt="Peter Kongsted Misander">  <!-- Indsæt billedet her -->
+          </div>
+          <p>
+            <i>Peter Misander - Lead Safety Engineer</i>
+          </p>
+      </div>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>Safe 2 Work ApS</strong><br>
+        Diplomvej 381,<br>
+        2800 Kongens Lyngby <br>
+        CVR: 41035633<br>
+      </div>
+
+      <div class="footer-mid">
+
+        Ring til os på : 23 81 16 00 <br>
+        Eller kontakt os igennem vores kontakt formula:
+
+        <div class="footer-links">
+          <a href="/kontakt.html">Kontakt</a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a class="footer-brand" href="/index.html">
+          <img class="footer-logo" src="/assets/logo.svg" alt="Safe2Work">
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> Safe2Work. Alle rettigheder forbeholdes.</small>
+    </div>
+  </footer>
+  
+
+  <script> /*Javascript delen her sørger for at det er det rigtige år der står i footeren*/
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
