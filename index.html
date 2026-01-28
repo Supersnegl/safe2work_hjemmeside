@@ -6,6 +6,7 @@
   <title>Konsulentfirma | Forside</title>
   <meta name="description" content="Konsulentydelser indenfor [indsæt område]. Kontakt os for en uforpligtende snak." />
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 <body>
   <header class="site-header">
@@ -13,47 +14,235 @@
         <a class="logo" href="/">
             <img src="/assets/logo.svg" alt="Safe2Work">
         </a>
-      <nav>
-        <a aria-current="page" href="/">Forside</a>
-        <a class ="btn" href="/om">Om os</a>
-        <a class="btn" href="/kontakt">Kontakt</a>
-      </nav>
+        <div class="header-right">
+          <nav class="nav-links">
+            <a aria-current="page" href="/">Forside</a>
+            <a class="btn" href="/om.html">Om os</a>
+            <a class="btn" href="/kontakt.html">Kontakt</a>
+          </nav>
+        
+          <div class="lang-switch" aria-label="Sprogvalg">
+            <a class="lang-pill is-active" href="/index.html">DA</a>
+            <a class="lang-pill" href="/index-en.html">EN</a>
+            <!-- Hvis vi vil have en tysk sektion -> senere: <a class="lang-pill" href="/index-de.html">DE</a> -->
+          </div>
+        </div>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero">
-      <h1>Vi hjælper jer med <span class="accent">[indsæt kerneydelse]</span>.</h1>
-      <p>
-        Kort pitch: Hvad løser I, for hvem, og hvad er effekten? (2–3 linjer)
-      </p>
-      <div class="hero-actions">
-        <a class="btn" href="/kontakt">Kontakt os</a>
-        <a class="btn btn-ghost" href="/om">Læs om os</a>
+    <section class="hero hero-3col">
+      <h1 class="hero-title">
+        Safe 2 Work ApS er en rådgivende ingeniørvirksomhed
+      </h1>
+    
+      <div class="hero-grid">
+        <p class="hero-lead">
+          Vores speciale er <span class="hl">risiko</span>, <span class="hl">sikkerhed</span> og
+          <span class="hl">arbejdsmiljø</span> i industrien.
+          Vi hjælper virksomheder med at gøre anlæg, maskiner og arbejdsgange sikre, 
+          gennemtænkte og robuste – så hændelser og arbejdsulykker forebygges.
+        </p>
+        
+    
+        <p class="hero-sub">
+          Vores moto er:
+          <span class="hl">”Where ever you work, we make it safe 2 work”.</span>
+          Vi trives bedst, når vi løser komplekse sikkerhedsudfordringer og omsætter
+           krav og analyser til konkrete løsninger, der fungerer i hverdagen.
+        </p>
+    
+        <div class="hero-actions hero-actions-col">
+          <a class="btn" href="/kontakt.html">Kontakt os</a>
+          <a class="btn" href="/om.html">Mere om os</a>
+        </div>
       </div>
     </section>
-
-    <section class="grid">
-      <article class="card">
-        <h2>Ydelse 1</h2>
-        <p>Beskriv ydelsen kort og konkret.</p>
-      </article>
-      <article class="card">
-        <h2>Ydelse 2</h2>
-        <p>Beskriv ydelsen kort og konkret.</p>
-      </article>
-      <article class="card">
-        <h2>Ydelse 3</h2>
-        <p>Beskriv ydelsen kort og konkret.</p>
-      </article>
+    
+    <section class="expertise">
+        <p class="lead">
+          Hos Safe 2 Work arbejder vi bredt med sikkerhed i industrien – 
+          fra strategi og ledelsessystemer til konkrete analyser, design og drift. Vores ydelser omfatter bl.a.:
+        </p>
+      
+        <ul class="liste">
+          <li><strong>Teknisk sikkerhed i design og drift</strong> – safety by design, barrierer/sikkerhedsfunktioner, kravspecifikationer og verificering.</li>
+          <li><strong>Process Safety &amp; risikoanalyser</strong> – HAZID/HAZOP, konsekvensmodellering og QRA samt risikodokumentation for risikovirksomheder.</li>
+          <li><strong>Functional Safety (SIS/IEC 61511)</strong> – LOPA, SRS, SIL-verifikation, test og idriftsættelse af sikkerhedsinstrumenterede funktioner.</li>
+          <li><strong>ATEX, brand og eksplosionssikkerhed</strong> – zoneklassifikation, ATEX-APV/inspektioner, brandgennemgange og eksplosionsberegninger/modellering.</li>
+          <li><strong>CE-mærkning &amp; teknisk compliance</strong> – Maskindirektiv/-forordning, ATEX og PED (strategi, dossier og overensstemmelse).</li>
+          <li><strong>Implementering i praksis</strong> – procedurer og beredskab, arbejdstilladelser/LOTO, PSS og inspektioner samt kemikaliesikkerhed (CLP), APV og arbejdsmiljøtiltag.</li>
+        </ul>
     </section>
+    
+    
+    
+    <section class="industry-grid-section">
+        <div class="industry-grid-inner">
+          <h2 class="industry-grid-title">Vi arbejder på tværs af industrier</h2>
+      
+          <div class="industry-grid">
+            
+            <!-- Card 1 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <!-- Indsæt dit SVG her -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pill-icon lucide-pill"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
+              </div>
+              <h3>Pharma</h3>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wheat-icon lucide-wheat"><path d="M2 22 16 8"/><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z"/><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/></svg>
+              </div>
+              <h3>Fødevarer</h3>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-spray-can-icon lucide-spray-can"><path d="M3 3h.01"/><path d="M7 5h.01"/><path d="M11 7h.01"/><path d="M3 7h.01"/><path d="M7 9h.01"/><path d="M3 11h.01"/><rect width="4" height="4" x="15" y="5"/><path d="m19 9 2 2v10c0 .6-.4 1-1 1h-6c-.6 0-1-.4-1-1V11l2-2"/><path d="m13 14 8-2"/><path d="m13 19 8-2"/></svg>
+              </div>
+              <h3>Farve & Lak</h3>
+            </div>
+      
+            <!-- Card 4 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flask-conical-icon lucide-flask-conical"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"/><path d="M6.453 15h11.094"/><path d="M8.5 2h7"/></svg>
+              </div>
+              <h3>Kemi & Plast</h3>
+            </div>
+      
+            <!-- Card 5 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-fuel-icon lucide-fuel"><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0v-6.998a2 2 0 0 0-.59-1.42L18 5"/><path d="M14 21V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v16"/><path d="M2 21h13"/><path d="M3 9h11"/></svg>
+              </div>
+              <h3>Olie & Gas</h3>
+            </div>
+      
+            <!-- Card 6 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap-icon lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+              </div>
+              <h3>Energi</h3>
+            </div>
+      
+            <!-- Card 7 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf-icon lucide-leaf"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+              </div>
+              <h3>Biogas</h3>
+            </div>
+      
+            <!-- Card 8 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wind-icon lucide-wind"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/><path d="M9.8 4.4A2 2 0 1 1 11 8H2"/></svg>
+              </div>
+              <h3>Carbon capture</h3>
+            </div>
+      
+            <!-- Card 9 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone-charging-icon lucide-smartphone-charging"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12.667 8 10 12h4l-2.667 4"/></svg>
+              </div>
+              <h3>P2X & Brint</h3>
+            </div>
+      
+            <!-- Card 10 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-beaker-icon lucide-beaker"><path d="M4.5 3h15"/><path d="M6 3v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3"/><path d="M6 14h12"/></svg>
+              </div>
+              <h3>Methanol anlæg</h3>
+            </div>
+      
+            <!-- Card 11 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sprout-icon lucide-sprout"><path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3"/><path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4"/><path d="M5 21h14"/></svg>
+              </div>
+              <h3>Biobrændsler</h3>
+            </div>
+      
+            <!-- Card 12 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-test-tube-diagonal-icon lucide-test-tube-diagonal"><path d="M21 7 6.82 21.18a2.83 2.83 0 0 1-3.99-.01a2.83 2.83 0 0 1 0-4L17 3"/><path d="m16 2 6 6"/><path d="M12 16H4"/></svg>
+              </div>
+              <h3>Laboratorier</h3>
+            </div>
+      
+            <!-- Card 13 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-factory-icon lucide-factory"><path d="M12 16h.01"/><path d="M16 16h.01"/><path d="M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"/><path d="M8 16h.01"/></svg>
+              </div>
+              <h3>Forsøgs- & pilotanlæg</h3>
+            </div>
+      
+            <!-- Card 14 -->
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb-icon lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+              </div>
+              <h3>Små udviklere og opfindere</h3>
+            </div>
+      
+          </div>
+        </div>
+    </section>
+
 
     <section class="card callout">
       <h2>Klar til en uforpligtende snak?</h2>
       <p>Skriv til os via formularen – vi svarer typisk indenfor 1–2 hverdage.</p>
-      <a class="btn" href="/kontakt">Gå til kontakt</a>
+      <a class="btn" href="/kontakt.html">Gå til kontakt</a>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>Safe 2 Work ApS</strong><br>
+        Diplomvej 381,<br>
+        2800 Kongens Lyngby <br>
+        CVR: 41035633<br>
+      </div>
+
+      <div class="footer-mid">
+
+        Ring til os på : 23 81 16 00 <br>
+        Eller kontakt os igennem vores kontakt formula:
+
+        <div class="footer-links">
+          <a href="/kontakt.html">Kontakt</a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a class="footer-brand" href="/index.html">
+          <img class="footer-logo" src="/assets/logo.svg" alt="Safe2Work">
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> Safe2Work. Alle rettigheder forbeholdes.</small>
+    </div>
+  </footer>
+
+  <script> /*Javascript delen her sørger for at det er det rigtige år der står i footeren*/
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  
 
 </body>
 </html>
